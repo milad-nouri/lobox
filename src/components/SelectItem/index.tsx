@@ -6,7 +6,6 @@ export interface selectItemProps {
 }
 export default function SelectItem(props: selectItemProps) {
     const { item, onSelect } = props;
-    // const [selectedId, setSelectedId] = useState<number | null>(null);
 
     return (
         <div className={`list-item ${item.selected ? "selected" : ""}`} onClick={() => onSelect(item)}>
